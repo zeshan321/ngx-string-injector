@@ -1,6 +1,6 @@
 {
   "name": "ngx-string-injector",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An easy, clean and customizable way to inject actionable HTML into strings. Useful for translations with placeholders that require links.",
   "keywords": [
     "string",

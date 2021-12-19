@@ -1,24 +1,21 @@
-# NgxStringInjector
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
+# ngx-string-injector [![NPM version](https://img.shields.io/npm/v/ngx-string-injector.svg?style=flat)](https://www.npmjs.com/package/ngx-miniprofiler-overlay)
+An easy, clean and customizable way to inject actionable HTML into strings. Useful for translations with placeholders that require links.
 
-## Code scaffolding
+## Problem
+When dealing with translations, there are moments when we need to have links or click actions. Typically translations have placeholders to indicate where values should go since the location of the placeholder would be different depending on the language. For example:
 
-Run `ng generate component component-name --project ngx-string-injector` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-string-injector`.
-> Note: Don't forget to add `--project ngx-string-injector` or else it will be added to the default project in your `angular.json` file. 
+In English:
+```
+Please click this link {0}.
+```
+In Japanese:
+```
+このリンク{0}をクリックしてください。
+```
+Many solutions online are not reusable, take time, messy and difficult to maintain. ngx-string-injector tries to solve all these issues.
 
-## Build
+## Examples
+Simple example: [Link](https://stackblitz.com/edit/angular-ivy-dh81vi?file=src/app/simple-example/simple-example.component.ts)
 
-Run `ng build ngx-string-injector` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngx-string-injector`, go to the dist folder `cd dist/ngx-string-injector` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-string-injector` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Advanced example with reusable rendering: [Link](https://stackblitz.com/edit/angular-ivy-dh81vi?file=src/app/advanced-example/advanced-example.component.ts)
