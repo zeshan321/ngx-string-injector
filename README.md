@@ -1,4 +1,3 @@
-
 # ngx-string-injector [![NPM version](https://img.shields.io/npm/v/ngx-string-injector.svg?style=flat)](https://www.npmjs.com/package/ngx-string-injector)
 An easy, clean and customizable way to inject actionable HTML into strings. Useful for translations with placeholders that require links.
 
