@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "96a6a260-4f5d-4db0-b7be-d683cccf3c29"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-string-injector": {
+      "projectType": "library",
+      "root": "projects/ngx-string-injector",
+      "sourceRoot": "projects/ngx-string-injector/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-string-injector/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-string-injector/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-string-injector/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-string-injector/src/test.ts",
+            "tsConfig": "projects/ngx-string-injector/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-string-injector/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-string-injector"
+}

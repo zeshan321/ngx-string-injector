@@ -1,0 +1,31 @@
+{
+  "name": "ngx-string-injector",
+  "version": "0.0.3",
+  "description": "An easy, clean and customizable way to inject actionable HTML into strings. Useful for translations with placeholders that require links.",
+  "keywords": [
+    "string",
+    "injector",
+    "injection",
+    "translations",
+    "placeholder",
+    "html",
+    "angular"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Zeshan Aslam",
+    "email": "zeshan12aslam@gmail.com",
+    "url": "https://zeshanaslam.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeshan321/ngx-string-injector"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
