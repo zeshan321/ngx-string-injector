@@ -13,7 +13,7 @@ export class StringInjectorDirective implements AfterViewChecked {
 
   @Input() injections: StringInjection[] = [];
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef) { }
 
   ngAfterViewChecked(): void {
     const placeHolders = this.injections.map(i => i.placeholder);
@@ -34,7 +34,7 @@ export class StringInjectorDirective implements AfterViewChecked {
       setTimeout(() => {
         const domElement: Element | null = document.getElementById(id);
         if (domElement != null) {
-          domElement.addEventListener("click", injection.onClick);
+          domElement.addEventListener('click', injection.onClick);
         }
       });
     }

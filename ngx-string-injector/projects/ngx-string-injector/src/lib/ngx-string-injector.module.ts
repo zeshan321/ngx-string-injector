@@ -1,12 +1,11 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {StringInjectorDirective} from "./ngx-string-injector.directive";
 
 @NgModule({
   declarations: [
     StringInjectorDirective
   ],
-  imports: [
-  ],
+  imports: [],
   exports: [
     StringInjectorDirective
   ]
